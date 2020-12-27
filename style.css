@@ -1,0 +1,137 @@
+body {
+    background-color: #AEB8FE;
+    font-size: 12rem;
+    box-sizing: border-box;
+}
+.dice-box{
+    position: relative;
+}
+.dice {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #EFE5DC;
+    margin: 100px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in 150ms;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.dot--margin{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+.dot2--left{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 20%;
+}
+.dot2--right{
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 20%;
+}
+.dot3--top{
+    position: absolute;
+    top: calc(30% - 10px);
+    left: calc(50% - 10px);
+}
+.dot3--left{
+    position: absolute;
+    top: calc(70% - 10px);
+    left: 20%;
+}
+.dot3--right{
+    position: absolute;
+    top: calc(70% - 10px);
+    right: 20%;
+}
+
+.dot4--top-left{
+    position: absolute;
+    top: calc(30% - 10px);
+    left: 20%;
+}
+.dot4--top-right{
+    position: absolute;
+    top: calc(30% - 10px);
+    right: 20%;
+}
+.dot4--bottom-left{
+    position: absolute;
+    top: calc(70% - 10px);
+    left: 20%;
+}
+.dot4--bottom-right{
+    position: absolute;
+    top: calc(70% - 10px);
+    right: 20%;
+}
+
+.dot5--top-left{
+    position: absolute;
+    top: calc(25% - 10px);
+    left: 17.5%;
+}
+.dot5--top-right{
+    position: absolute;
+    top: calc(25% - 10px);
+    right: 17.5%;
+}
+.dot5--bottom-left{
+    position: absolute;
+    top: calc(75% - 10px);
+    left: 17.5%;
+}
+.dot5--bottom-right{
+    position: absolute;
+    top: calc(75% - 10px);
+    right: 17.5%;
+}
+.dot5--center{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+.dot6--top-left{
+    position: absolute;
+    top: calc(25% - 10px);
+    left: 20%;
+}
+.dot6--top-right{
+    position: absolute;
+    top: calc(25% - 10px);
+    right: 20%;
+}
+.dot6--center-left{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 20%;
+}
+.dot6--center-right{
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 20%;
+}
+.dot6--bottom-left{
+    position: absolute;
+    top: calc(75% - 10px);
+    left: 20%;
+}
+.dot6--bottom-right{
+    position: absolute;
+    top: calc(75% - 10px);
+    right: 20%;
+}
+.dice--opacity{
+    opacity: 1;
+    z-index: 1;
+}

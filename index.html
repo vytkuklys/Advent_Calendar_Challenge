@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Advent Calendar Challenges</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="dice-box">
+            <div class="dice" id="one-dot" onclick="rollDice(0)">
+                <div class="dot dot--margin"></div>
+            </div>
+            <div class="dice" id="two-dots" onclick="rollDice(1)">
+                <div class="dot dot2--left"></div>
+                <div class="dot dot2--right"></div>
+            </div>
+            <div class="dice dice--opacity" id="three-dots" onclick="rollDice(2)">
+                <div class="dot dot3--top"></div>
+                <div class="dot dot3--left"></div>
+                <div class="dot dot3--right"></div>
+            </div>
+            <div class="dice" id="four-dots" onclick="rollDice(3)">
+                <div class="dot dot4--top-left"></div>
+                <div class="dot dot4--top-right"></div>
+                <div class="dot dot4--bottom-left"></div>
+                <div class="dot dot4--bottom-right"></div>
+            </div>
+            <div class="dice" id="five-dots" onclick="rollDice(4)">
+                <div class="dot dot5--top-left"></div>
+                <div class="dot dot5--top-right"></div>
+                <div class="dot dot5--center"></div>
+                <div class="dot dot5--bottom-left"></div>
+                <div class="dot dot5--bottom-right"></div>
+            </div>
+            <div class="dice" id="six-dots" onclick="rollDice(5)">
+                <div class="dot dot6--top-left"></div>
+                <div class="dot dot6--top-right"></div>
+                <div class="dot dot6--center-left"></div>
+                <div class="dot dot6--center-right"></div>
+                <div class="dot dot6--bottom-left"></div>
+                <div class="dot dot6--bottom-right"></div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
