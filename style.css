@@ -1,10 +1,13 @@
 body {
+    width: 100%;
     background-color: #AEB8FE;
-    font-size: 12rem;
+    font-size: 12px;
     box-sizing: border-box;
 }
 .dice-box{
     position: relative;
+    margin-bottom: 1rem;
+    height: 12.5rem;
 }
 .dice {
     width: 90px;
@@ -134,4 +137,103 @@ body {
 .dice--opacity{
     opacity: 1;
     z-index: 1;
+}
+/*Exercise 15 - carousel*/
+img {
+    width: 200px;
+}
+
+.previous, .next {
+    width: 35px;
+}
+.selected {
+    opacity: .3;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 200px 20%;
+    place-content: center;
+}
+
+.gallery-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+.previous, .next {
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 500%;
+    transform-style: preserve-3d;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    transform: translateX(0);
+    transition: all ease-in-out 300ms;
+}
+
+.card {
+    width: 100%;
+    margin-right: 20px;
+    align-self: center;
+}
+/*Exercise 23 - text box*/
+.tweet-box {
+    width: 20%;
+    margin: 2.5rem auto;
+
+}
+#textarea{
+    border-radius: 0.5rem;
+}
+
+.tweet-box p{
+    text-align: right;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tweet-box .btn{
+    width: 231px;
+    background-color: skyblue;
+    outline: none;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    height: 5rem;
+    margin-left: 0;
+}
+.tweet-box h2 {
+    font-size: 2.5rem;
+    line-height: 0.5rem;
+}
+.tweet-box button:hover{
+    background-color: rgb(127, 127, 236);
+}
+/*Exercise 24  - stop game*/
+.stop-game{
+    background-color: rgb(231, 118, 231);
+}
+.title{
+    text-align: center;
+}
+
+.target, .spin{
+    display: flex;
+    justify-content: center
+}
+
+#result{
+    color: blue;
+    text-align: center;
+}
+
+button{
+    height: 32px;
+    border: 1.5px solid aquamarine;
+    display: block;
+    margin: 0 auto;
 }
