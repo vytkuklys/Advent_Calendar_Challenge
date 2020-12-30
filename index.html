@@ -44,6 +44,38 @@
                 <div class="dot dot6--bottom-right"></div>
             </div>
         </div>
+        <div class="container">
+            <img src="previous.svg" class="previous selected" alt="previous image">
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img class="card" src="images/1.jpg" alt="Christmas Cookies">
+                    <img class="card" src="images/2.jpg" alt="Christmas Cookies">
+                    <img class="card" src="images/3.jpg" alt="Christmas Cookies">
+                    <img class="card" src="images/4.jpg" alt="Christmas Cookies">
+                    <img class="card current" src="images/5.jpg" alt="Christmas Cookies">
+                </div>
+            </div>
+            <img src="next.svg" class="next" alt="next image">
+        </div>
+        <div class="tweet-box">
+            <textarea id="textarea" type="text" cols="30" rows="5" placeholder="Type in the box"></textarea>
+            <p class="counter">140/140</p>
+            <button class="btn"><h2>Tweet</h2></button>
+        </div>
+        <div class="stop-game">
+            <div class="title">
+                <h1>Test your agility!</h1>
+                <h3>Push the button at the right time to hit the target number (0-100)</h3>
+            </div>
+            <div class="target">
+                <h3>Target Number: </h3> &nbsp;<h3 id="targetNum"></h3>
+            </div>
+            <div class="spin">
+                <h3>Spining Wheel: </h3> &nbsp;<h3 id="spinning"></h3>
+            </div>
+            <button id="buttonPressed">STOP</button>
+            <h4 id="result"></h4>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>
